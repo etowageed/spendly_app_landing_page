@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.grad-ient {
+  background: conic-gradient(
+    from 187.69deg at 50% 50%,
+    #7b4397 0deg,
+    #e54331 270deg,
+    #7b4397 359.81deg,
+    #7b4397 360deg
+  );
+}
+
+@layer components {
+  .body-mob-med {
+    @apply font-medium text-base;
+  }
+
+  .body-web-med {
+    @apply font-medium text-2xl;
+  }
+}
