@@ -547,16 +547,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 3.5rem;
 }
 
-.mt-32 {
-  margin-top: 8rem;
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 
 .flex {
   display: flex;
-}
-
-.hidden {
-  display: none;
 }
 
 .h-16 {
@@ -571,10 +567,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 9rem;
 }
 
-.w-\[90\%\] {
-  width: 90%;
-}
-
 .w-\[95\%\] {
   width: 95%;
 }
@@ -583,24 +575,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-between;
 }
 
+.space-x-10 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .rounded-full {
   border-radius: 9999px;
-}
-
-.rounded {
-  border-radius: 0.25rem;
-}
-
-.rounded-sm {
-  border-radius: 0.125rem;
-}
-
-.rounded-lg {
-  border-radius: 0.5rem;
-}
-
-.rounded-md {
-  border-radius: 0.375rem;
 }
 
 .rounded-3xl {
@@ -670,6 +652,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 1rem;
 }
 
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -710,6 +696,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 700;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .leading-10 {
   line-height: 2.5rem;
 }
@@ -727,6 +717,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-primary-col {
   --tw-text-opacity: 1;
   color: rgb(123 67 151 / var(--tw-text-opacity));
+}
+
+.underline {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.decoration-primary-col {
+  -webkit-text-decoration-color: #7b4397;
+          text-decoration-color: #7b4397;
 }
 
 .grad-ient {
@@ -764,10 +764,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:body-web-med {
     font-weight: 500;
-  }
-
-  .md\:visible {
-    visibility: visible;
   }
 
   .md\:order-2 {
@@ -828,26 +824,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:w-\[80\%\] {
     width: 80%;
-  }
-
-  .md\:w-\[60\%\] {
-    width: 60%;
-  }
-
-  .md\:w-\[70\%\] {
-    width: 70%;
-  }
-
-  .md\:w-\[75\%\] {
-    width: 75%;
-  }
-
-  .md\:w-\[77\%\] {
-    width: 77%;
-  }
-
-  .md\:w-\[85\%\] {
-    width: 85%;
   }
 
   .md\:max-w-md {

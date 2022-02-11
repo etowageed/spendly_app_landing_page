@@ -4,6 +4,7 @@
   },
 
 "scripts":{
-  "build": "npx tailwindcss -i ./src/index.css -o ./public/main.css --watch"
+  "build": "npx tailwindcss -i ./src/index.css -o ./public/main.css --watch",
+  "prod": "npx tailwindcss -i ./src/index.css -o ./public/main.css"
 }
 }
