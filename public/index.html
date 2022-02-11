@@ -16,42 +16,171 @@
   </head>
   <body>
     <div class="site-wrapper">
-      <div class="hero-section bg-body-dark">
-        <nav class="px-8 py-5 bg-body-dark">
+      <div class="hero-section bg-body-dark pb-12">
+        <nav class="px-8 py-5">
           <a href="#"><img src="/img/Spend.ly.svg" alt="Spendly Logo" /></a>
           <button class="btn">Join the waitlist</button>
         </nav>
-
-        <div class="hero-section-content px-8 md:px-14 lg:px-44 mt-12 md:mt-32">
-          <h1 class="text-white md:text-7xl text-40px text-center md:text-left">
-            All your expenses in one place. No kidding!
-          </h1>
-          <p
-            class="text-white text-left body-mob-med md:body-web-med mt-27px md:mb-12 mb-27px"
+        <div class="hero-items md:flex md:flex-nowrap">
+          <div
+            class="hero-copy px-8 md:px-14 lg:px-44 mt-12 md:mt-32 md:w-2/3 md:mb-0 mb-24"
           >
-            Spendly is a mobile app that allows users to easily keep track of
-            their finances
-          </p>
-          <div class="form mb-27px">
-            <form action="">
-              <div
-                class="bg-input-col w-full md:max-w-md flex justify-between rounded-full"
-              >
-                <input
-                  type="text"
-                  class="bg-input-col ml-3 rounded-full focus:outline-none"
-                  placeholder="Enter your email"
-                />
-                <button
-                  class="px-3 py-5 rounded-full bg-primary-col text-white text-sm font-medium"
+            <h1
+              class="text-white md:text-7xl text-40px text-center leading-10 md:text-left"
+            >
+              All your expenses <br />
+              in one place. <br />
+              No kidding!
+            </h1>
+            <p
+              class="text-white text-left body-mob-med md:body-web-med mt-11 mb-11"
+            >
+              Spendly is a mobile app that allows users to easily keep track of
+              their finances
+            </p>
+            <!-- form component -->
+            <div class="form">
+              <form action="">
+                <div
+                  class="bg-input-col pl-4 w-full md:max-w-md flex justify-between rounded-full"
                 >
-                  Join the waitlist
-                </button>
-              </div>
-            </form>
+                  <input
+                    type="text"
+                    class="bg-input-col rounded-full focus:outline-none"
+                    placeholder="Enter your email"
+                    required
+                  />
+                  <button
+                    class="w-36 h-16 px-2 rounded-full bg-primary-col text-white text-sm font-medium"
+                  >
+                    Join the waitlist
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="hero-img flex md:w-1/3 mt-12 md:mt-0 md:mr-10">
+            <img src="/img/hero-img.png" alt="Phone mockup" />
+          </div>
+        </div>
+      </div>
+
+      <!-- site body -->
+      <div class="body-section">
+        <div class="summary bg-off-white py-10 px-8 md:flex">
+          <div class="body-copy md:w-2/5 md:order-2 md:mt-40 md:mr-12">
+            <h3 class="headings mb-8">
+              Get a quick summary of all your expenses per day, everyday
+            </h3>
+            <p class="body-mob-med md:body-web-med text-text-dark">
+              Get important information such as recent transactions, and add new
+              records by a single tap of a button
+            </p>
+          </div>
+          <div class="summary-img md:order-1 md:w-3/5">
+            <picture>
+              <source media="(min-width:650px)" srcset="/img/summary.png" />
+              <img src="/img/summary-mob.png" class="" alt="Mockup" />
+            </picture>
+          </div>
+        </div>
+
+        <div class="track-fi py-10 px-8">
+          <div class="body-copy">
+            <img src="/img/books.png" class="float-right" alt="books" />
+            <h3 class="headings mb-16 mt-16 text-center clear-both">
+              Easily track your finances with <br />
+              zero accounting skills
+            </h3>
+            <img src="/img/calendar.png" alt="calendar" />
+          </div>
+        </div>
+
+        <div class="in-depth bg-off-pink py-10 px-8 md:flex">
+          <div class="body-copy md:w-2/5 md:mt-40 md:ml-12">
+            <h3 class="headings mb-8">
+              In depth analysis of expenses and income over a long period of
+              time
+            </h3>
+            <p class="body-mob-med md:body-web-med text-text-dark">
+              Get fully detailed statistics of finances according to spending
+              and earning categories, budgets, loans etc.
+            </p>
+          </div>
+          <div class="summary-img md:w-3/5 md:pl-12">
+            <img src="/img/stats.png" alt="Mockup" />
+          </div>
+        </div>
+
+        <div class="budget py-10 px-8 md:flex">
+          <div class="body-copy md:w-2/5 md:order-2 md:mt-40 md:mr-12">
+            <h3 class="headings mb-8">
+              Set spending limits <br />
+              with the Budget feature
+            </h3>
+            <p class="body-mob-med md:body-web-med text-text-dark">
+              Create budgets according to earning and spending categories
+            </p>
+          </div>
+          <div class="summary-img md:order-1 md:w-3/5">
+            <picture>
+              <source media="(min-width:650px)" srcset="/img/budget.png" />
+              <img src="/img/budget-mob.png" class="" alt="Mockup" />
+            </picture>
+          </div>
+        </div>
+        <div
+          class="bg-body-dark w-[95%] md:w-[80%] mx-auto rounded-3xl md:flex"
+        >
+          <div class="accounts-img">
+            <picture>
+              <source media="(min-width:650px)" srcset="/img/accounts.png" />
+              <img alt="" />
+            </picture>
+          </div>
+          <div class="px-5 py-8">
+            <h4
+              class="text-white md:text-7xl text-40px text-center leading-10 md:text-left mb-14"
+            >
+              Be the first to <br />
+              know when we launch
+            </h4>
+            <!-- form component -->
+            <div class="form">
+              <form action="">
+                <div
+                  class="bg-input-col pl-4 w-full md:max-w-md flex justify-between rounded-full"
+                >
+                  <input
+                    type="text"
+                    class="bg-input-col rounded-full focus:outline-none"
+                    placeholder="Enter your email"
+                    required
+                  />
+                  <button
+                    class="w-36 h-16 px-2 rounded-full bg-primary-col text-white text-sm font-medium"
+                  >
+                    Join the waitlist
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <footer class="mt-16">
+      <span>Reach out to us</span>
+
+      <img src="/img/twitter.png" alt="twitter" /><img
+        src="/img/behance.png"
+        alt="Behance"
+      />
+
+      <span>Designed and built with</span
+      ><img src="/img/heart.png" alt="heart" /> <span>by</span>
+      <span>@etowageed</span>
+    </footer>
   </body>
 </html>

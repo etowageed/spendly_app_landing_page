@@ -12,12 +12,23 @@
   );
 }
 
+.show-img {
+  visibility: visible;
+}
+
+.hide-img {
+  display: none;
+}
+
 @layer components {
   .body-mob-med {
-    @apply font-medium text-base;
+    @apply font-medium text-base text-center;
   }
 
   .body-web-med {
-    @apply font-medium text-2xl;
+    @apply font-medium text-2xl text-left;
+  }
+  .headings {
+    @apply text-primary-col text-4xl md:text-5xl font-bold leading-10 text-center md:text-left;
   }
 }
