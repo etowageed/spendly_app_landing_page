@@ -13,6 +13,7 @@
       rel="stylesheet"
     />
     <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
   </head>
   <body>
     <div class="site-wrapper">
@@ -61,7 +62,7 @@
           </div>
 
           <div class="hero-img flex md:w-1/3 mt-12 md:mt-0 md:mr-10">
-            <img src="img/hero-img.png" alt="Phone mockup" />
+            <img class="hero-image" src="img/hero-img.png" alt="Phone mockup" />
           </div>
         </div>
       </div>
@@ -79,7 +80,7 @@
             </p>
           </div>
           <div class="summary-img md:order-1 md:w-3/5">
-            <picture>
+            <picture class="summary-img">
               <source media="(min-width:650px)" srcset="img/summary.png" />
               <img src="img/summary-mob.png" class="" alt="Mockup" />
             </picture>
@@ -193,5 +194,22 @@
         ></span
       >
     </div>
+    <script>
+      // gsap.registerPlugin(SrollTrigger);
+
+      gsap.from(".hero-copy", { duration: 2, x: "-100%", ease: "back.out" });
+      gsap.from(".hero-image", {
+        duration: 1,
+        y: "-150%",
+        delay: "1",
+        ease: "back.out",
+      });
+      gsap.from(".summary-img", {
+        duration: 2.5,
+        ScrollTrigger: ".summary-img",
+        x: "100%",
+        ease: "black.out",
+      });
+    </script>
   </body>
 </html>
