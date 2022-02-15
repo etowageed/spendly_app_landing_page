@@ -13,7 +13,8 @@
       rel="stylesheet"
     />
     <link rel="icon" type="image/x-icon" href="img/favicon.png" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
   </head>
   <body>
     <div class="site-wrapper">
@@ -69,7 +70,7 @@
 
       <!-- site body -->
       <div class="body-section">
-        <div class="summary bg-off-white py-10 px-8 md:flex">
+        <div class="summary-content bg-off-white py-10 px-8 md:flex">
           <div class="body-copy md:w-2/5 md:order-2 md:mt-40 md:mr-12">
             <h3 class="headings mb-8">
               Get a quick summary of all your expenses per day, everyday
@@ -79,7 +80,7 @@
               records by a single tap of a button
             </p>
           </div>
-          <div class="summary-img md:order-1 md:w-3/5">
+          <div class="md:order-1 md:w-3/5">
             <picture class="summary-img">
               <source media="(min-width:650px)" srcset="img/summary.png" />
               <img src="img/summary-mob.png" class="" alt="Mockup" />
@@ -109,7 +110,7 @@
               and earning categories, budgets, loans etc.
             </p>
           </div>
-          <div class="summary-img md:w-3/5 md:pl-12">
+          <div class="md:w-3/5 md:pl-12">
             <img src="img/stats.png" alt="Mockup" />
           </div>
         </div>
@@ -124,7 +125,7 @@
               Create budgets according to earning and spending categories
             </p>
           </div>
-          <div class="summary-img md:order-1 md:w-3/5">
+          <div class="md:order-1 md:w-3/5">
             <picture>
               <source media="(min-width:650px)" srcset="img/budget.png" />
               <img src="img/budget-mob.png" class="" alt="Mockup" />
@@ -194,21 +195,23 @@
         ></span
       >
     </div>
+
     <script>
-      // gsap.registerPlugin(SrollTrigger);
+      // gsap.registerPlugin(scrollTrigger);
 
       gsap.from(".hero-copy", { duration: 2, x: "-100%", ease: "back.out" });
       gsap.from(".hero-image", {
-        duration: 1,
-        y: "-150%",
-        delay: "1",
+        duration: 2,
+        delay: 0.7,
+        x: "105%",
         ease: "back.out",
       });
+
       gsap.from(".summary-img", {
-        duration: 2.5,
-        ScrollTrigger: ".summary-img",
+        // scrollTrigger: ".summary-img",
         x: "100%",
-        ease: "black.out",
+        ease: "back.out",
+        duration: 2.5,
       });
     </script>
   </body>

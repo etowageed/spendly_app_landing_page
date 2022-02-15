@@ -703,6 +703,10 @@ Ensure the default browser behavior of the `hidden` attribute.
           text-decoration-color: #7b4397;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .grad-ient {
   background: conic-gradient(
     from 187.69deg at 50% 50%,

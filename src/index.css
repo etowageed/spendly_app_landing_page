@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 .grad-ient {
   background: conic-gradient(
     from 187.69deg at 50% 50%,
