@@ -71,7 +71,7 @@
       <!-- site body -->
       <div class="body-section">
         <div class="summary-content bg-off-white py-10 px-8 md:flex">
-          <div class="body-copy md:w-2/5 md:order-2 md:mt-40 md:mr-12">
+          <div class="sum-copy md:w-2/5 md:order-2 md:mt-40 md:mr-12">
             <h3 class="headings mb-8">
               Get a quick summary of all your expenses per day, everyday
             </h3>
@@ -81,7 +81,7 @@
             </p>
           </div>
           <div class="md:order-1 md:w-3/5">
-            <picture class="summary-img">
+            <picture class="sum-img">
               <source media="(min-width:650px)" srcset="img/summary.png" />
               <img src="img/summary-mob.png" class="" alt="Mockup" />
             </picture>
@@ -90,12 +90,12 @@
 
         <div class="track-fi py-10 px-8">
           <div class="body-copy">
-            <img src="img/books.png" class="float-right" alt="books" />
+            <img src="img/books.png" class="float-right 3d-1" alt="books" />
             <h3 class="headings mb-16 mt-16 text-center clear-both">
               Easily track your finances with <br />
               zero accounting skills
             </h3>
-            <img src="img/calendar.png" alt="calendar" />
+            <img src="img/calendar.png" alt="calendar" class="3d-2" />
           </div>
         </div>
 
@@ -195,24 +195,6 @@
         ></span
       >
     </div>
-
-    <script>
-      // gsap.registerPlugin(scrollTrigger);
-
-      gsap.from(".hero-copy", { duration: 2, x: "-100%", ease: "back.out" });
-      gsap.from(".hero-image", {
-        duration: 2,
-        delay: 0.7,
-        x: "105%",
-        ease: "back.out",
-      });
-
-      gsap.from(".summary-img", {
-        // scrollTrigger: ".summary-img",
-        x: "100%",
-        ease: "back.out",
-        duration: 2.5,
-      });
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
