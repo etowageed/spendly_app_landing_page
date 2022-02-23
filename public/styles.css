@@ -495,6 +495,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+.fixed {
+  position: fixed;
+}
+
+.inset-0 {
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
 .order-1 {
   order: 1;
 }
@@ -548,12 +559,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 2.5rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .flex {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-16 {
   height: 4rem;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .w-full {
@@ -572,8 +595,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 95%;
 }
 
+.w-28 {
+  width: 7rem;
+}
+
 .flex-nowrap {
   flex-wrap: nowrap;
+}
+
+.items-center {
+  align-items: center;
 }
 
 .justify-between {
@@ -586,12 +617,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
 
 .rounded-3xl {
   border-radius: 1.5rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .bg-body-dark {
@@ -617,6 +656,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-off-pink {
   --tw-bg-opacity: 1;
   background-color: rgb(252 221 236 / var(--tw-bg-opacity));
+}
+
+.bg-gray-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+
+.bg-opacity-70 {
+  --tw-bg-opacity: 0.7;
 }
 
 .px-8 {
@@ -649,6 +697,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 2rem;
 }
 
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -678,8 +746,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.25rem;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .font-medium {
   font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .italic {
@@ -735,6 +812,11 @@ html {
 
 .hide-img {
   display: none;
+}
+
+.hover\:bg-secondary-col:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 55 25 / var(--tw-bg-opacity));
 }
 
 .focus\:outline-none:focus {
