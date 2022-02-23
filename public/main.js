@@ -5,5 +5,15 @@ gsap.from(".hero-copy", { duration: 2, x: "-100%", ease: "back.out" });
 
 gsap.from(".sum-copy", { scrollTrigger: {
     trigger:".sum-copy",
-    toggleActions: "restart pause resume pause",
-}, duration: 6, x: "-40%", ease: "back.out" });
+    toggleActions: "restart none none none",
+}, duration: 3, x: "-40%", ease: "back.out" });
+
+gsap.from(".body-copy-depth", { scrollTrigger: {
+    trigger:".body-copy-depth",
+    toggleActions: "restart none none none",
+}, duration: 3, x: "-40%", ease: "back.out" });
+
+gsap.from(".body-copy-budget", { scrollTrigger: {
+    trigger:".body-copy-budget",
+    toggleActions: "restart none none none",
+}, duration: 3, y: "20%", ease: "back.out" });
