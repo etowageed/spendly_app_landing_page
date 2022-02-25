@@ -26,19 +26,3 @@ gsap.from(".track-fi", { scrollTrigger: {
     trigger:".track-fi",
     toggleActions: "restart none none none",
 }, duration: 3, y: "20%", ease: "back.out" });
-
-// modal 
-
-function openModal() {
-    modal.classList.remove("hidden");
-};
-
-function closeModal() {
-    modal.classList.add("hidden");
-};
-
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.classList.add("hidden");
-    }
-    }
